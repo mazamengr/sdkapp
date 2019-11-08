@@ -46,3 +46,9 @@ stages:
 #        appName: 'myAppName'
 #        manifest: 'manifest.yml'
 #        credentialsId: 'myDeploymentCredentialsId'
+### Stage-specific configuration
+stages:
+  integrationTests:
+    credentials:
+      - alias: 'MOCK_SYSTEM'
+        credentialId: 'CredentialsId-Mock'
